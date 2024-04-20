@@ -12,10 +12,10 @@ from PIL import Image
 #SQL Connection
 
 mydb = mysql.connector.connect(
-    host = '127.0.0.1', 
-    user = 'root', 
-    password = 'tk09091996', 
-    database = 'phonepev5' 
+    host = '', 
+    user = '', 
+    password = '', 
+    database = '' 
 )
 mycursor = mydb.cursor()
 
@@ -26,7 +26,7 @@ mycursor.execute('select * from aggregated_insurance')
 t1= mycursor.fetchall()
 # mydb.commit()
 
-agg_insurance=pd.DataFrame(t1, columns= ("States", "Years", "Quarters", "Trans_type", "Trans_count","Trans_amount"))
+agg_insurance=pd.DataFrame(t1, columns= ("States", "Years", "Quarters", "Trans_type", "Trans_count", "Trans_amount"))
 
 #DF - aggregated_transaction - Table 2
 
@@ -483,10 +483,10 @@ def top_user_plot_2(df, state):
 def top_chart_transaction_amount(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -547,10 +547,10 @@ def top_chart_transaction_amount(table_name):
 def top_chart_transaction_amount_new(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -611,10 +611,10 @@ def top_chart_transaction_amount_new(table_name):
 def top_chart_transaction_count(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -675,10 +675,10 @@ def top_chart_transaction_count(table_name):
 def top_chart_transaction_count_new(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -739,10 +739,10 @@ def top_chart_transaction_count_new(table_name):
 def top_chart_registereduser(table_name, state):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -806,10 +806,10 @@ def top_chart_registereduser(table_name, state):
 def top_chart_appopens(table_name, state):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -872,10 +872,10 @@ def top_chart_appopens(table_name, state):
 def top_chart_registereduser_state(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -935,10 +935,10 @@ def top_chart_registereduser_state(table_name):
 def top_brand_count(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -999,10 +999,10 @@ def top_brand_count(table_name):
 def top_brand_percentage(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
@@ -1063,10 +1063,10 @@ def top_brand_percentage(table_name):
 def top_brand_transaction_type(table_name):
 
     mydb = mysql.connector.connect(
-        host = '127.0.0.1', 
-        user = 'root', 
-        password = 'tk09091996', 
-        database = 'phonepev5' 
+        host = '', 
+        user = '', 
+        password = '', 
+        database = '' 
     )
     mycursor = mydb.cursor()
 
